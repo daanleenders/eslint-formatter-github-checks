@@ -39,7 +39,7 @@ function annotationsForResults(results) {
             ? annotationLevel.WARNING
             : annotationLevel.FAILURE,
         message: message.message,
-        title: message.ruleId,
+        title: message.ruleId || "Eslint fatal error",
       };
 
       annotations.push(annotation);
